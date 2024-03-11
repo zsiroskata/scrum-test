@@ -21,6 +21,19 @@ namespace scrum_test
 			InitializeComponent();
 		}
 
+        private void btn1_Click(object sender, RoutedEventArgs e)
+        {
+			lbl1f.Content = ((ListBoxItem)lbx1.SelectedItem).Content;
+			lbl2f.Content = ((ComboBoxItem)cmb1.SelectedItem).Content;
 
-	}
+			lbx3f.Items.Clear();
+            foreach (CheckBox checkBox in stackP3f.Children)
+            {
+				if (checkBox.IsChecked == true)
+				{
+					lbx3f.Items.Add(checkBox.Content);
+				}
+            }
+        }
+    }
 }

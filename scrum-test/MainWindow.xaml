@@ -11,24 +11,24 @@
         <Label Content="neved:" HorizontalAlignment="Left" Height="36" Margin="26,50,0,0" VerticalAlignment="Top" Width="68" FontSize="15"/>
 
         <Label Content="email cím:" HorizontalAlignment="Left" Height="36" Margin="26,91,0,0" VerticalAlignment="Top" Width="109" FontSize="15"/>
-        <TextBlock HorizontalAlignment="Left" Height="28" Margin="170,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Background="#FFC7C7C7"><Run Language="hu-hu"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="170,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Background="#FFC7C7C7"><Run Language="hu-hu"/></TextBlock>
+        <TextBlock x:Name="txtNev" HorizontalAlignment="Left" Height="28" Margin="170,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Background="#FFC7C7C7"><Run Language="hu-hu"/></TextBlock>
+        <TextBlock x:Name="txtEmail" HorizontalAlignment="Left" Height="26" Margin="170,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Background="#FFC7C7C7"><Run Language="hu-hu"/></TextBlock>
 
         <Label Content="1. ki a scrum csapat vezetője?&#xD;&#xA;" HorizontalAlignment="Left" Height="33" Margin="17,143,0,0" VerticalAlignment="Top" Width="214" FontSize="15"/>
-        <ListBox HorizontalAlignment="Left" Height="70" Margin="26,176,0,0" VerticalAlignment="Top" Width="199">
+        <ListBox x:Name="lbx1" HorizontalAlignment="Left" Height="70" Margin="26,176,0,0" VerticalAlignment="Top" Width="199">
             <ListBoxItem>Product Owner</ListBoxItem>
             <ListBoxItem>Scrum Master</ListBoxItem>
             <ListBoxItem>Developer Team</ListBoxItem>
         </ListBox>
         <Label Content="2. Milyen módszertan a scrum módszertan?" HorizontalAlignment="Left" Height="33" Margin="17,267,0,0" VerticalAlignment="Top" Width="304" FontSize="15"/>
-        <ComboBox HorizontalAlignment="Left" Height="27" Margin="26,305,0,0" VerticalAlignment="Top" Width="286">
+        <ComboBox x:Name="cmb1" HorizontalAlignment="Left" Height="27" Margin="26,305,0,0" VerticalAlignment="Top" Width="286">
             <ComboBoxItem>Sprint Planning Meeting</ComboBoxItem>
             <ComboBoxItem>Daily Conversion</ComboBoxItem>
             <ComboBoxItem>Sprint Retrospective</ComboBoxItem>
             <ComboBoxItem>Blacklog Grooming</ComboBoxItem>
         </ComboBox>
         <Label Content="3. Milyen eseményeket ismersz a Scrumban?" HorizontalAlignment="Left" Height="33" Margin="17,349,0,0" VerticalAlignment="Top" Width="304" FontSize="15"/>
-        <StackPanel HorizontalAlignment="Left" Height="69" Margin="26,387,0,0" VerticalAlignment="Top" Width="232">
+        <StackPanel x:Name="stackP3f" HorizontalAlignment="Left" Height="69" Margin="26,387,0,0" VerticalAlignment="Top" Width="232">
             <CheckBox Content="Sprint Planning Meeting"/>
             <CheckBox Content="Daily Conversion"/>
             <CheckBox Content="Sprint Retrospective"/>
@@ -37,25 +37,25 @@
         <TextBlock HorizontalAlignment="Left" Height="82" Margin="416,54,0,0" TextWrapping="Wrap" Text="Ez a teszt arra szolgál, hogy felmérje a tudásodat a Scrum módszertannal kapcsolatban. Amennyiben a teszt eredménye sikeres, veregesd meg a bal vállad a jobb kezeddel. Amennyiben nem sikeres a teszt, itt az ideje tanulni, mert nemsokára számonkérés következik a fenti módszertan anyagából." VerticalAlignment="Top" Width="352" TextAlignment="Justify"/>
         <Label Content="2. Milyen módszertan a scrum módszertan?" HorizontalAlignment="Left" Height="33" Margin="17,267,0,0" VerticalAlignment="Top" Width="304" FontSize="15"/>
         <Label Content="4. Milyen dokumentumokat ismersz a scrumba?" HorizontalAlignment="Left" Height="33" Margin="416,159,0,0" VerticalAlignment="Top" Width="336" FontSize="15"/>
-        <StackPanel HorizontalAlignment="Left" Height="49" Margin="416,197,0,0" VerticalAlignment="Top" Width="325">
+        <StackPanel x:Name="stackP4" HorizontalAlignment="Left" Height="49" Margin="416,197,0,0" VerticalAlignment="Top" Width="325">
             <RadioButton Content="Product Blacklog"/>
             <RadioButton Content="Sprint Retrospective"/>
             <RadioButton Content="Daily Scrum"/>
         </StackPanel>
         <Label Content="5. Milyen típusú módszertan a scrum?" HorizontalAlignment="Left" Height="33" Margin="416,262,0,0" VerticalAlignment="Top" Width="336" FontSize="15"/>
-        <TextBox HorizontalAlignment="Left" Height="27" Margin="416,305,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="259"/>
-        <Button Content="KÉSZ" HorizontalAlignment="Left" Height="56" Margin="429,422,0,0" VerticalAlignment="Top" Width="259" Background="#FFF7ABFF"/>
+        <TextBox x:Name="txb5f" HorizontalAlignment="Left" Height="27" Margin="416,305,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="259"/>
+        <Button x:Name="btn1" Content="KÉSZ" HorizontalAlignment="Left" Height="56" Margin="429,422,0,0" VerticalAlignment="Top" Width="259" Background="#FFF7ABFF" Click="btn1_Click"/>
         <Label Content="Válaszok" HorizontalAlignment="Left" Height="41" Margin="856,36,0,0" VerticalAlignment="Top" Width="229"/>
         <Label Content="1. feladat" HorizontalAlignment="Left" Height="25" Margin="856,70,0,0" VerticalAlignment="Top" Width="83"/>
         <Label Content="2. feladat" HorizontalAlignment="Left" Height="33" Margin="856,144,0,0" VerticalAlignment="Top" Width="83"/>
         <Label Content="3. feladat" HorizontalAlignment="Left" Height="27" Margin="856,211,0,0" VerticalAlignment="Top" Width="83"/>
         <Label Content="4. feladat" HorizontalAlignment="Left" Height="26" Margin="856,340,0,0" VerticalAlignment="Top" Width="83"/>
         <Label Content="5. feladat" HorizontalAlignment="Left" Height="30" Margin="856,414,0,0" VerticalAlignment="Top" Width="83" RenderTransformOrigin="0.5,1.906"/>
-        <Label Content="" HorizontalAlignment="Left" Height="27" Margin="893,109,0,0" VerticalAlignment="Top" Width="155" Background="#FFC8FBFF"/>
-        <Label Content="" HorizontalAlignment="Left" Height="27" Margin="893,182,0,0" VerticalAlignment="Top" Width="155" Background="#FFC8FBFF"/>
-        <Label Content="" HorizontalAlignment="Left" Height="28" Margin="893,371,0,0" VerticalAlignment="Top" Width="155" Background="#FFC8FBFF"/>
-        <Label Content="" HorizontalAlignment="Left" Height="28" Margin="893,449,0,0" VerticalAlignment="Top" Width="155" Background="#FFC8FBFF"/>
-        <ListBox HorizontalAlignment="Left" Height="89" Margin="856,243,0,0" VerticalAlignment="Top" Width="192" />
+        <Label x:Name="lbl1f" Content="" HorizontalAlignment="Left" Height="27" Margin="893,109,0,0" VerticalAlignment="Top" Width="155" Background="#FFC8FBFF"/>
+        <Label x:Name="lbl2f" Content="" HorizontalAlignment="Left" Height="27" Margin="893,182,0,0" VerticalAlignment="Top" Width="155" Background="#FFC8FBFF"/>
+        <ListBox x:Name="lbx3f" HorizontalAlignment="Left" Height="89" Margin="856,243,0,0" VerticalAlignment="Top" Width="192" />
+        <Label x:Name="lbl4f" Content="" HorizontalAlignment="Left" Height="28" Margin="893,371,0,0" VerticalAlignment="Top" Width="155" Background="#FFC8FBFF"/>
+        <Label x:Name="lbl5f" Content="" HorizontalAlignment="Left" Height="28" Margin="893,449,0,0" VerticalAlignment="Top" Width="155" Background="#FFC8FBFF"/>
 
 
     </Grid>
