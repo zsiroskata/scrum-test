@@ -34,6 +34,23 @@ namespace scrum_test
 					lbx3f.Items.Add(checkBox.Content);
 				}
             }
+
+			foreach (RadioButton radioButton in stackP4.Children)
+			{
+                if (radioButton.IsChecked == true)
+                {
+                    lbl4f.Content = radioButton.Content;
+                }
+            }
+
+			lbl5f.Content = lbl5f.Content;
+
+			MessageBox.Show($"Kedves  {txtNev.Text} kéri továbbítani az eredményét a(z) {txtEmail.Text} címre?", "Rendelkezés", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.Yes);
+
+
+
+
+
         }
     }
 }
